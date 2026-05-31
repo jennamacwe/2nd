@@ -33,7 +33,7 @@ function updateDots() {
 
 function verifyPin() {
   if (currentPin === CORRECT_PIN) {
-    window.location.href = 'landing.html';
+    window.location.href = './wellcome/landing.html';
   } else {
     showError('kok salah?!?!?!?!?!????');
     shakeDots();
