@@ -1310,8 +1310,20 @@ body {
   gap: 14px;
 }
 
-.healed-track-wrap {
-  overflow: hidden;
+.healed-pill {
+  font-size: 16px; 
+}
+
+@media (max-width: 767px) {
+  .healed-pill {
+    font-size: 14px; 
+  }
+}
+
+@media (min-width: 768px) {
+  .healed-pill {
+    font-size: 16px; 
+  }
 }
 
 @keyframes healedScrollFwd {
