@@ -6,6 +6,8 @@
 
 html, body {
   height: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -704,7 +706,8 @@ body {
   gap: 48px;
   align-items: center;
   position: relative;
-  overflow: visible;
+  overflow-x: clip;
+  overflow-y: visible;
   height: 100%;
 }
 
@@ -715,7 +718,8 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 0;
-  overflow: visible;
+  overflow-x: clip;
+  overflow-y: visible;
   gap: 34px;
 }
 
@@ -984,7 +988,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 80px;
+  margin: 0 auto 0 80px;
   opacity: 0;
   transform: translateX(60px);
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
@@ -1027,7 +1031,6 @@ body {
   text-align: center;
   gap: 20px;
   width: 100%;
-  margin-left: -50px
 }
 
 .aq-step.active {
@@ -1249,16 +1252,23 @@ body {
   .aq-stack:not(.tapped) { width: 320px; height: 360px; }
   .aq-frame.f1, .aq-frame.f2, .aq-frame.f3 { width: 180px; height: 240px; }
   .aq-right { padding: 0 0 60px; }
+  .aq-card { margin: 0 auto; }
   .aq-overlay { padding: 0 32px; gap: 6px; }
   .aq-ov-frame { border-radius: 10px; }
 }
 
 @media (max-width: 480px) {
   .about-quiz { padding: 48px 20px; }
-  .aq-card { 
-    padding: 32px 24px; 
+  .aq-card {
+    padding: 32px 24px;
     height: 400px;
-    right: 20px;
+    width: 300px;
+    left: 10px;
+    margin: 0 auto;
+  }
+
+  .aq-step {
+    margin-left: -50px;
   }
   .aq-stack:not(.tapped) { width: 280px; height: 300px; margin-left: -40px; margin-top: -20px; }
   .aq-frame.f1, .aq-frame.f2, .aq-frame.f3 { width: 150px; height: 200px; border-radius: 14px; }
@@ -1379,7 +1389,8 @@ body {
   width: 100%;
   background: #ffff;
   padding: 90px 0;
-  overflow: visible;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 .lf-inner {
@@ -1517,7 +1528,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 /*
