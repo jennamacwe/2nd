@@ -546,10 +546,6 @@
       });
     });
 
-    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
-      document.documentElement.classList.add('is-touch');
-    }
-
     ['#aqStack', '#lfStack'].forEach((sel) => {
       const stack = document.querySelector(sel);
       if (!stack) return;

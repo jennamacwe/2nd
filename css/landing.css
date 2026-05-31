@@ -901,70 +901,71 @@ body {
   z-index: 20;
 }
 
-/* Touch hint — dikendalikan JS lewat class .is-touch di <html> */
-html.is-touch .aq-hover-hint { display: none; }
-html.is-touch .aq-click-hint { display: block; right: -120px; }
-html.is-touch .aq-stack.tapped .aq-click-hint { opacity: 0; }
+@media (hover: none) {
+  .aq-hover-hint { display: none; }
+  .aq-click-hint { display: block; right: -120px;}
+  .aq-stack.tapped .aq-click-hint { opacity: 0; }
 
-html.is-touch .aq-left:has(.aq-stack.tapped) {
-  align-items: stretch;
-}
+  .aq-left:has(.aq-stack.tapped) {
+    align-items: stretch;
+  }
 
-/* Nonaktifkan CSS :hover desktop pada touch device */
-html.is-touch .aq-stack:hover { width: 320px; height: 340px; }
-html.is-touch .aq-stack:hover .aq-frame {
-  width: 210px; height: 280px;
-  border-radius: 20px;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
-  transform: unset;
-  opacity: unset;
-}
-html.is-touch .aq-stack:hover .aq-frame.f1  { top: 50%; left: 80%; transform: translate(-50%,-50%) rotate(0deg);   opacity: 1; width: 210px; height: 280px; }
-html.is-touch .aq-stack:hover .aq-frame.f2  { top: 50%; left: 80%; transform: translate(-10%,-50%) rotate(14deg);  opacity: 1; width: 185px; height: 247px; }
-html.is-touch .aq-stack:hover .aq-frame.f3  { top: 50%; left: 80%; transform: translate(-90%,-50%) rotate(-14deg); opacity: 1; width: 185px; height: 247px; }
-html.is-touch .aq-stack:hover .aq-frame.f4,
-html.is-touch .aq-stack:hover .aq-frame.f5,
-html.is-touch .aq-stack:hover .aq-frame.f6,
-html.is-touch .aq-stack:hover .aq-frame.f7,
-html.is-touch .aq-stack:hover .aq-frame.f8,
-html.is-touch .aq-stack:hover .aq-frame.f9,
-html.is-touch .aq-stack:hover .aq-frame.f10,
-html.is-touch .aq-stack:hover .aq-frame.f11,
-html.is-touch .aq-stack:hover .aq-frame.f12 { opacity: 0; }
+  /* Nonaktifkan semua CSS :hover desktop pada touch device */
+  .aq-stack:hover { width: 320px; height: 340px; }
+  .aq-stack:hover .aq-frame {
+    width: 210px; height: 280px;
+    border-radius: 20px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+    transform: unset;
+    opacity: unset;
+  }
+  .aq-stack:hover .aq-frame.f1  { top: 50%; left: 80%; transform: translate(-50%,-50%) rotate(0deg);   opacity: 1; width: 210px; height: 280px; }
+  .aq-stack:hover .aq-frame.f2  { top: 50%; left: 80%; transform: translate(-10%,-50%) rotate(14deg);  opacity: 1; width: 185px; height: 247px; }
+  .aq-stack:hover .aq-frame.f3  { top: 50%; left: 80%; transform: translate(-90%,-50%) rotate(-14deg); opacity: 1; width: 185px; height: 247px; }
+  .aq-stack:hover .aq-frame.f4,
+  .aq-stack:hover .aq-frame.f5,
+  .aq-stack:hover .aq-frame.f6,
+  .aq-stack:hover .aq-frame.f7,
+  .aq-stack:hover .aq-frame.f8,
+  .aq-stack:hover .aq-frame.f9,
+  .aq-stack:hover .aq-frame.f10,
+  .aq-stack:hover .aq-frame.f11,
+  .aq-stack:hover .aq-frame.f12 { opacity: 0; }
 
-/* Slider mode saat tapped — berlaku di semua device */
-.aq-stack.tapped {
-  width: 100%;
-  max-width: calc(100vw - 40px);
-  height: 190px;
-  margin-left: 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 0;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  position: relative;
-}
-.aq-stack.tapped::-webkit-scrollbar { display: none; }
+  /* Slider mode saat tapped */
+  .aq-stack.tapped {
+    width: 100%;
+    max-width: calc(100vw - 40px);
+    height: 190px;
+    margin-left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    position: relative;
+  }
+  .aq-stack.tapped::-webkit-scrollbar { display: none; }
 
-.aq-stack.tapped .aq-frame {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  transform: none !important;
-  opacity: 1 !important;
-  flex: 0 0 130px;
-  width: 130px !important;
-  height: 180px !important;
-  border-radius: 14px !important;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
-  scroll-snap-align: start;
-  transition: none !important;
+  .aq-stack.tapped .aq-frame {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    flex: 0 0 130px;
+    width: 130px !important;
+    height: 180px !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+    scroll-snap-align: start;
+    transition: none !important;
+  }
 }
 
 /* ── Kanan: Quiz Card ── */
@@ -1666,71 +1667,72 @@ html.is-touch .aq-stack:hover .aq-frame.f12 { opacity: 0; }
   transform-origin: top center;
 }
 
-/* Touch hint — dikendalikan JS lewat class .is-touch di <html> */
-html.is-touch .lf-hover-hint { display: none; }
-html.is-touch .lf-click-hint { display: block; }
-html.is-touch .lf-stack.tapped .lf-click-hint { opacity: 0; }
+@media (hover: none) {
+  .lf-hover-hint { display: none; }
+  .lf-click-hint { display: block; }
+  .lf-stack.tapped .lf-click-hint { opacity: 0; }
 
-/* Nonaktifkan CSS :hover desktop pada touch device */
-html.is-touch .lf-stack:hover { width: 320px; height: 340px; }
-html.is-touch .lf-stack:hover .lf-frame {
-  width: 210px; height: 280px;
-  border-radius: 20px;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
-}
-html.is-touch .lf-stack:hover .lf-frame.lff1  { top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(0deg);   opacity: 1; width: 210px; height: 280px; }
-html.is-touch .lf-stack:hover .lf-frame.lff2  { top: 50%; left: 50%; transform: translate(-10%,-50%) rotate(14deg);  opacity: 1; width: 185px; height: 247px; }
-html.is-touch .lf-stack:hover .lf-frame.lff3  { top: 50%; left: 50%; transform: translate(-90%,-50%) rotate(-14deg); opacity: 1; width: 185px; height: 247px; }
-html.is-touch .lf-stack:hover .lf-frame.lff4,
-html.is-touch .lf-stack:hover .lf-frame.lff5,
-html.is-touch .lf-stack:hover .lf-frame.lff6,
-html.is-touch .lf-stack:hover .lf-frame.lff7,
-html.is-touch .lf-stack:hover .lf-frame.lff8,
-html.is-touch .lf-stack:hover .lf-frame.lff9,
-html.is-touch .lf-stack:hover .lf-frame.lff10,
-html.is-touch .lf-stack:hover .lf-frame.lff11,
-html.is-touch .lf-stack:hover .lf-frame.lff12 { opacity: 0; }
+  /* Nonaktifkan semua CSS :hover desktop pada touch device */
+  .lf-stack:hover { width: 320px; height: 340px; }
+  .lf-stack:hover .lf-frame {
+    width: 210px; height: 280px;
+    border-radius: 20px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+  }
+  .lf-stack:hover .lf-frame.lff1  { top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(0deg);   opacity: 1; width: 210px; height: 280px; }
+  .lf-stack:hover .lf-frame.lff2  { top: 50%; left: 50%; transform: translate(-10%,-50%) rotate(14deg);  opacity: 1; width: 185px; height: 247px; }
+  .lf-stack:hover .lf-frame.lff3  { top: 50%; left: 50%; transform: translate(-90%,-50%) rotate(-14deg); opacity: 1; width: 185px; height: 247px; }
+  .lf-stack:hover .lf-frame.lff4,
+  .lf-stack:hover .lf-frame.lff5,
+  .lf-stack:hover .lf-frame.lff6,
+  .lf-stack:hover .lf-frame.lff7,
+  .lf-stack:hover .lf-frame.lff8,
+  .lf-stack:hover .lf-frame.lff9,
+  .lf-stack:hover .lf-frame.lff10,
+  .lf-stack:hover .lf-frame.lff11,
+  .lf-stack:hover .lf-frame.lff12 { opacity: 0; }
 
-/* Slider mode saat tapped — berlaku di semua device */
-.lf-stack.tapped {
-  width: 100%;
-  max-width: calc(100vw - 40px);
-  height: 190px;
-  margin-left: 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 0;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  position: relative;
-  cursor: default;
-}
-.lf-stack.tapped::-webkit-scrollbar { display: none; }
-.lf-stack.tapped .lf-click-hint { opacity: 0; }
+  /* Slider mode saat tapped */
+  .lf-stack.tapped {
+    width: 100%;
+    max-width: calc(100vw - 40px);
+    height: 190px;
+    margin-left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    position: relative;
+    cursor: default;
+  }
+  .lf-stack.tapped::-webkit-scrollbar { display: none; }
+  .lf-stack.tapped .lf-click-hint { opacity: 0; }
 
-.lf-stack.tapped .lf-frame {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  transform: none !important;
-  opacity: 1 !important;
-  flex: 0 0 130px;
-  width: 130px !important;
-  height: 180px !important;
-  border-radius: 14px !important;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
-  scroll-snap-align: start;
-  transition: none !important;
-}
+  .lf-stack.tapped .lf-frame {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    flex: 0 0 130px;
+    width: 130px !important;
+    height: 180px !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+    scroll-snap-align: start;
+    transition: none !important;
+  }
 
-.lf-right:has(.lf-stack.tapped) {
-  align-items: stretch;
-  justify-content: flex-start;
+  .lf-right:has(.lf-stack.tapped) {
+    align-items: stretch;
+    justify-content: flex-start;
+  }
 }
 
 /* ── Responsive ── */
