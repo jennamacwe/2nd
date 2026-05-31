@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Soft Little Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/landing.css" />
+  <script src="js/butterfly.js" defer></script>
+  <script src="js/typing.js" defer></script>
+</head>
+<body>
+  <section class="hero">
+
+    <!-- Background photo -->
+    <img src="Assets/photoLandingPage.png" alt="" class="hero-bg" />
+
+    <!-- Top-left logo -->
+    <div class="hero-logo">
+      <img src="Assets/logo.png" alt="Kennie & Jenna" />
+    </div>
+
+    <!-- Butterflies -->
+    <div class="butterflies" id="butterflies"></div>
+
+    <!-- Center text -->
+    <div class="hero-content">
+      <h1 class="hero-headline">
+        <span class="word" style="--i:0">a</span>
+        <span class="word" style="--i:1">soft</span>
+        <span class="word" style="--i:2">little</span>
+        <em><span class="word" style="--i:3">universe</span></em>
+        <span class="word" style="--i:4">about</span>
+        <span class="word" style="--i:5">us</span>
+      </h1>
+      <p class="hero-tagline">
+        <span class="word" style="--i:7">built</span>
+        <span class="word" style="--i:8">from</span>
+        <span class="word" style="--i:9">tiny</span>
+        <span class="word" style="--i:10">moments,</span>
+        <span class="word" style="--i:11">warm</span>
+        <span class="word" style="--i:12">laughs,</span>
+        <span class="word" style="--i:13">late</span>
+        <span class="word" style="--i:14">nights,</span>
+        <span class="word" style="--i:15">and</span>
+        <span class="word" style="--i:16">a</span>
+        <span class="word" style="--i:17">love</span>
+        <span class="word" style="--i:18">that</span>
+        <span class="word" style="--i:19">never</span>
+        <span class="word" style="--i:20">really</span>
+        <span class="word" style="--i:21">left.</span>
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ── Bento Section ── -->
+  <section class="bento">
+
+    <!-- Card 1: The Beginning (kiri besar) -->
+    <div class="bento-card card-beginning">
+      <div class="beginning-text">
+        <h2 class="beginning-headline">The <span>Beginning</span></h2>
+        <p class="beginning-tagline">"Assalamualaikum kak Kenny" a simple greeting that quietly turned into a lifelong crush, in every breath I take..</p>
+        <p class="beginning-date">15 November 2023</p>
+      </div>
+      <div class="beginning-chat">
+        <img src="Assets/BentoSection-chat.png" alt="Chat" class="chat-img" />
+        <img src="Assets/BentoSection-bubbleKennie.png" alt="Kennie" class="bubble-label bubble-kennie" />
+        <img src="Assets/BentoSection-bubbleJenna.png" alt="Jenna" class="bubble-label bubble-jenna" />
+      </div>
+    </div>
+
+    <!-- Kolom kanan -->
+    <div class="bento-col-right">
+
+      <!-- Card 2: Counter (kanan atas) -->
+      <div class="bento-card card-counter">
+        <div class="counter-header">
+          <img src="Assets/kupu2.png" alt="" class="counter-butterfly" />
+          <div class="counter-header-text">
+            <h2 class="counter-headline">We've <span>Been Orbiting</span></h2>
+            <p class="counter-sub">around each other for…</p>
+          </div>
+        </div>
+        <div class="counter-boxes">
+          <div class="counter-unit">
+            <span class="counter-num" id="cnt-days">0</span>
+            <span class="counter-label">hari</span>
+          </div>
+          <div class="counter-sep">·</div>
+          <div class="counter-unit">
+            <span class="counter-num" id="cnt-hours">0</span>
+            <span class="counter-label">jam</span>
+          </div>
+          <div class="counter-sep">·</div>
+          <div class="counter-unit">
+            <span class="counter-num" id="cnt-minutes">0</span>
+            <span class="counter-label">menit</span>
+          </div>
+          <div class="counter-sep">·</div>
+          <div class="counter-unit">
+            <span class="counter-num" id="cnt-seconds">0</span>
+            <span class="counter-label">detik</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 & 4: Video + Foto (kanan bawah) -->
+      <div class="bento-row-bottom">
+        <div class="bento-card card-video">
+          <video src="Assets/VIDEO 1.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="bento-card card-photo">
+          <img src="Assets/PHOTO 1.JPG" alt="Photo 1" />
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="js/counter.js"></script>
+
+  <!-- ── Our Memories Section ── -->
+  <section class="memories">
+
+    <!-- Teks overlay: absolute center antara dua row -->
+    <div class="memories-text">
+      <h2 class="memories-headline">
+        <span class="word-scroll" style="--j:0">Our</span>
+        <span class="aq-blue"><span class="word-scroll" style="--j:1">Memories</span></span>
+      </h2>
+      <p class="memories-tagline">
+        <span class="word-scroll" style="--j:3">Thank</span>
+        <span class="word-scroll" style="--j:4">you</span>
+        <span class="word-scroll" style="--j:5">for</span>
+        <span class="word-scroll" style="--j:6">making</span>
+        <span class="word-scroll" style="--j:7">this</span>
+        <span class="word-scroll" style="--j:8">sensitive-hearted</span>
+        <span class="word-scroll" style="--j:9">girl</span>
+        <span class="word-scroll" style="--j:10">feel</span>
+        <span class="word-scroll" style="--j:11">full,</span>
+        <span class="word-scroll" style="--j:12">both</span>
+        <span class="word-scroll" style="--j:13">in</span>
+        <span class="word-scroll" style="--j:14">her</span>
+        <span class="word-scroll" style="--j:15">stomach</span>
+        <span class="word-scroll" style="--j:16">and</span>
+        <span class="word-scroll" style="--j:17">in</span>
+        <span class="word-scroll" style="--j:18">her</span>
+        <span class="word-scroll" style="--j:19">heart.</span>
+        <span class="word-scroll" style="--j:20">thankyou</span>
+        <span class="word-scroll" style="--j:21">for</span>
+        <span class="word-scroll" style="--j:22">everything</span>
+        <span class="word-scroll" style="--j:23">we've</span>
+        <span class="word-scroll" style="--j:24">been</span>
+        <span class="word-scroll" style="--j:25">through</span>
+        <span class="word-scroll" style="--j:26">mas</span>
+        <span class="word-scroll" style="--j:27">Kenny..</span>
+      </p>
+    </div>
+
+    <!-- Row Atas: PHOTO 1–13, kiri → kanan -->
+    <div class="mem-track-wrap">
+      <div class="mem-track mem-track-top">
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 1.JPG"   alt="Memory 1"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 2.jpeg"  alt="Memory 2"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 3.jpeg"  alt="Memory 3"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 4.jpeg"  alt="Memory 4"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 5.jpeg"  alt="Memory 5"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 6.jpeg"  alt="Memory 6"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 7.jpeg"  alt="Memory 7"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 8.jpeg"  alt="Memory 8"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 9.jpeg"  alt="Memory 9"  loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 10.jpeg" alt="Memory 10" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 11.jpeg" alt="Memory 11" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 12.jpeg" alt="Memory 12" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 13.jpeg" alt="Memory 13" loading="lazy" /></div></div>
+        <!-- clone seamless loop -->
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 1.JPG"   alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 2.jpeg"  alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 3.jpeg"  alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 4.jpeg"  alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 5.jpeg"  alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 6.jpeg"  alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 7.jpeg"  alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 8.jpeg"  alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 9.jpeg"  alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 10.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 11.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 12.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 13.jpeg" alt="" loading="lazy" /></div></div>
+      </div>
+    </div>
+
+    <!-- Gap ruang untuk teks overlay -->
+    <div class="mem-gap"></div>
+
+    <!-- Row Bawah: PHOTO 14–26, kanan → kiri -->
+    <div class="mem-track-wrap">
+      <div class="mem-track mem-track-bottom">
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 14.jpeg" alt="Memory 14" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 15.jpeg" alt="Memory 15" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 16.jpeg" alt="Memory 16" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 17.jpeg" alt="Memory 17" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 18.jpeg" alt="Memory 18" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 19.jpeg" alt="Memory 19" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 20.jpeg" alt="Memory 20" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 21.jpeg" alt="Memory 21" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 22.jpeg" alt="Memory 22" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 23.jpeg" alt="Memory 23" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 24.jpeg" alt="Memory 24" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 25.jpeg" alt="Memory 25" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 26.jpeg" alt="Memory 26" loading="lazy" /></div></div>
+        <!-- clone seamless loop -->
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 14.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 15.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 16.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 17.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 18.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 19.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 20.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 21.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 22.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 23.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 24.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 25.jpeg" alt="" loading="lazy" /></div></div>
+        <div class="mem-photo"><div class="mem-photo-inner"><img src="Assets/PHOTO 26.jpeg" alt="" loading="lazy" /></div></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── About Us / Quiz Section ── -->
+  <section class="about-quiz">
+
+    <!-- Kiri -->
+    <div class="aq-left">
+      <div class="aq-text">
+        <h2 class="aq-headline">
+          <span class="word-scroll" style="--j:0">How</span>
+          <span class="word-scroll" style="--j:1">Much</span>
+          <span class="word-scroll" style="--j:2">Do</span>
+          <span class="word-scroll" style="--j:3">You</span>
+          <span class="word-scroll" style="--j:4">Know</span><br>
+          <span class="aq-blue"><span class="word-scroll" style="--j:5">About</span>
+          <span class="word-scroll" style="--j:6">Us?</span></span>
+        </h2>
+        <p class="aq-tagline">
+          <span class="word-scroll" style="--j:8">every</span>
+          <span class="word-scroll" style="--j:9">answer</span>
+          <span class="word-scroll" style="--j:10">holds</span>
+          <span class="word-scroll" style="--j:11">a</span>
+          <span class="word-scroll" style="--j:12">little</span>
+          <span class="word-scroll" style="--j:13">memory</span>
+          <span class="word-scroll" style="--j:14">of</span>
+          <span class="word-scroll" style="--j:15">us.</span>
+        </p>
+      </div>
+
+      <!-- Stack foto (trigger hover) -->
+      <div class="aq-stack" id="aqStack">
+        <div class="aq-frame f1" ><img src="Assets/Frame 1.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f2" ><img src="Assets/Frame 2.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f3" ><img src="Assets/Frame 3.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f4" ><img src="Assets/Frame 4.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f5" ><img src="Assets/Frame 5.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f6" ><img src="Assets/Frame 6.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f7" ><img src="Assets/Frame 7.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f8" ><img src="Assets/Frame 8.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f9" ><img src="Assets/Frame 9.png"  alt="" loading="lazy" /></div>
+        <div class="aq-frame f10"><img src="Assets/Frame 10.png" alt="" loading="lazy" /></div>
+        <div class="aq-frame f11"><img src="Assets/Frame 11.png" alt="" loading="lazy" /></div>
+        <div class="aq-frame f12"><img src="Assets/Frame 12.png" alt="" loading="lazy" /></div>
+        <img src="Assets/hoverMe.png" class="aq-hover-hint" alt="Hover me!" />
+        <img src="Assets/click.png" class="aq-click-hint" alt="Click!" />
+      </div>
+
+    </div>
+
+    <!-- Kanan: Quiz Card -->
+    <div class="aq-right">
+      <div class="aq-card" id="aqCard">
+
+        <!-- Step 0: Start -->
+        <div class="aq-step active" data-step="0">
+          <p class="aq-card-title">Let's start, bubu?</p>
+          <button class="aq-btn-start" id="btnStart">I can do it! →</button>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="aq-step" data-step="1">
+          <p class="aq-q-num">1 / 5</p>
+          <p class="aq-question">Kapan pertamakali kita nge date?</p>
+          <div class="aq-options">
+            <button class="aq-opt" data-correct="true">11 Mei 2024</button>
+            <button class="aq-opt">9 Juni 2024</button>
+            <button class="aq-opt">14 Juli 2024</button>
+            <button class="aq-opt">16 April 2024</button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="aq-step" data-step="2">
+          <p class="aq-q-num">2 / 5</p>
+          <p class="aq-question">Kue tart terakhir yang kita makan?</p>
+          <div class="aq-options">
+            <button class="aq-opt">Kue Strawberry Mako</button>
+            <button class="aq-opt">Dubai Chewy Cookie</button>
+            <button class="aq-opt" data-correct="true" >Vanilla sponge cake</button>
+            <button class="aq-opt">Cookie Famima</button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="aq-step" data-step="3">
+          <p class="aq-q-num">3 / 5</p>
+          <p class="aq-question">Apa makanan pertama yang kita makan bareng?</p>
+          <div class="aq-options">
+            <button class="aq-opt" data-correct="true">Geprek Joder ka Dhani</button>
+            <button class="aq-opt">Ayam Bakar Pak D</button>
+            <button class="aq-opt">Gorengan Jajan Lawson</button>
+            <button class="aq-opt">Nasi Goreng Trubus</button>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="aq-step" data-step="4">
+          <p class="aq-q-num">4 / 5</p>
+          <p class="aq-question">Kapan mas merasa paling dicintai oleh aku?</p>
+          <textarea class="aq-input" placeholder="Tulis jawabanmu di sini…" rows="4"></textarea>
+          <button class="aq-btn-submit" data-step="4">Kirim →</button>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="aq-step" data-step="5">
+          <p class="aq-q-num">5 / 5</p>
+          <p class="aq-question">Apa hal yang ingin mas lakukan bersamaku di masa depan?</p>
+          <textarea class="aq-input" placeholder="Tulis jawabanmu di sini…" rows="4"></textarea>
+          <button class="aq-btn-submit" data-step="5">Kirim →</button>
+        </div>
+
+        <!-- Step Final -->
+        <div class="aq-step" data-step="final">
+          <div class="aq-final">
+            <p class="aq-final-score">0</p>
+            <p class="aq-final-msg">Remidi nilai mas <span class="aq-final-score-inline">0</span>!<br>kita harus saling sayang 100 tahun kedepan! </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── Healed Section ── -->
+  <section class="healed-section">
+    <div class="healed-header">
+      <h2 class="healed-headline">
+        <span class="word-scroll" style="--j:0">Things</span>
+        <span class="word-scroll" style="--j:1">You</span>
+        <span class="word-scroll" style="--j:2">Did</span>
+        <span class="word-scroll" style="--j:3">That</span>
+        <span class="aq-blue"><span class="word-scroll" style="--j:4">Healed</span>
+        <span class="word-scroll" style="--j:5">Me</span></span>
+      </h2>
+      <p class="healed-tagline">
+        <span class="word-scroll" style="--j:6">you</span>
+        <span class="word-scroll" style="--j:7">probably</span>
+        <span class="word-scroll" style="--j:8">never</span>
+        <span class="word-scroll" style="--j:9">realized</span>
+        <span class="word-scroll" style="--j:10">it,</span>
+        <span class="word-scroll" style="--j:11">but</span>
+        <span class="word-scroll" style="--j:12">your</span>
+        <span class="word-scroll" style="--j:13">love</span>
+        <span class="word-scroll" style="--j:14">healed</span>
+        <span class="word-scroll" style="--j:15">parts</span>
+        <span class="word-scroll" style="--j:16">of</span>
+        <span class="word-scroll" style="--j:17">me</span>
+        <span class="word-scroll" style="--j:18">i</span>
+        <span class="word-scroll" style="--j:19">thought</span>
+        <span class="word-scroll" style="--j:20">would</span>
+        <span class="word-scroll" style="--j:21">stay</span>
+        <span class="word-scroll" style="--j:22">broken</span>
+        <span class="word-scroll" style="--j:23">forever.</span>
+      </p>
+    </div>
+    <div class="healed-tracks">
+
+      <!-- Baris 1 -->
+      <div class="healed-track-wrap">
+        <div class="healed-track healed-track--a">
+          <div class="healed-pill">makasii udaa tetap tinggal di hari-hari aku susah dicintai</div>
+          <div class="healed-pill">makasii udaa bikin hari-hariku terasa aman</div>
+          <div class="healed-pill">makasih udaa nganggep aku layak, walaupun aku ragu sih</div>
+          <div class="healed-pill">makasih udaa nungguin aku selesai nangis</div>
+          <!-- duplikat -->
+          <div class="healed-pill">makasii udaa tetap tinggal di hari-hari aku susah dicintai.</div>
+          <div class="healed-pill">makasii udaa bikin hari-hariku terasa aman</div>
+          <div class="healed-pill">makasih udaa nganggep aku layak, walaupun aku ragu sih</div>
+          <div class="healed-pill">makasih udaa nungguin aku selesai nangis</div>
+        </div>
+      </div>
+
+      <!-- Baris 2 -->
+      <div class="healed-track-wrap">
+        <div class="healed-track healed-track--b">
+          <div class="healed-pill">makasii udaa selalu membuat perutku kenyang dengan makanan enakk</div>
+          <div class="healed-pill">makasii udaa ada pas aku gatauu cara minta tolong</div>
+          <div class="healed-pill">makasih udaa bikin aku ngerasa punya "rumah"</div>
+          <!-- duplikat -->
+          <div class="healed-pill">makasii udaa selalu membuat perutku kenyang dengan makanan enakk</div>
+          <div class="healed-pill">makasii udaa ada pas aku gatauu cara minta tolong</div>
+          <div class="healed-pill">makasih udaa bikin aku ngerasa punya "rumah"</div>
+        </div>
+      </div>
+
+      <!-- Baris 3 -->
+      <div class="healed-track-wrap">
+        <div class="healed-track healed-track--c">
+          <div class="healed-pill">makasii udaa tetap lembut sama akuu</div>
+          <div class="healed-pill">terimakasih banyak untuk segala hal yang gabisa aku ucapin bubb</div>
+          <div class="healed-pill">makasii udaa tetap memilih tinggal, bahkan saat aku membuatnya sulit.</div>
+          <!-- duplikat -->
+          <div class="healed-pill">makasii udaa tetap lembut sama akuu</div>
+          <div class="healed-pill">terimakasih banyak untuk segala hal yang gabisa aku ucapin bubb</div>
+          <div class="healed-pill">makasii udaa tetap memilih tinggal, bahkan saat aku membuat hal itu sulit..</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+  <!-- ── Little Future Section ── -->
+  <section class="lf-section">
+    <div class="lf-inner">
+
+      <!-- Kiri: Checklist -->
+      <div class="lf-left">
+        <h2 class="lf-headline">
+          <span class="word-scroll" style="--j:0">Our</span>
+          <span class="lf-blue"><span class="word-scroll" style="--j:1">Little</span>
+          <span class="word-scroll" style="--j:2">Future</span></span>
+          <span class="word-scroll" style="--j:3">Checklist</span>
+        </h2>
+        <p class="lf-tagline">
+          <span class="word-scroll" style="--j:4">Small</span>
+          <span class="word-scroll" style="--j:5">plans</span>
+          <span class="word-scroll" style="--j:6">for</span>
+          <span class="word-scroll" style="--j:7">the</span>
+          <span class="word-scroll" style="--j:8">future</span>
+          <span class="word-scroll" style="--j:9">that</span>
+          <span class="word-scroll" style="--j:10">we</span>
+          <span class="word-scroll" style="--j:11">are</span>
+          <span class="word-scroll" style="--j:12">currently</span>
+          <span class="word-scroll" style="--j:13">building</span>
+          <span class="word-scroll" style="--j:14">together.</span>
+        </p>
+
+        <ul class="lf-checklist">
+          <li class="lf-item lf-done" style="--item-i:0">
+            <label class="lf-label">
+              <input type="checkbox" checked />
+              <span class="lf-box"></span>
+              <span class="lf-text">Bikin risol mayo bareng</span>
+            </label>
+          </li>
+          <li class="lf-item" style="--item-i:1">
+            <label class="lf-label">
+              <input type="checkbox" />
+              <span class="lf-box"></span>
+              <span class="lf-text">Road trip jauh tanpa tujuan, belok aja sesuka hati</span>
+            </label>
+          </li>
+          <li class="lf-item" style="--item-i:2">
+            <label class="lf-label">
+              <input type="checkbox" />
+              <span class="lf-box"></span>
+              <span class="lf-text">Jalan-jalan ke Swiss!</span>
+            </label>
+          </li>
+          <li class="lf-item" style="--item-i:3">
+            <label class="lf-label">
+              <input type="checkbox" />
+              <span class="lf-box"></span>
+              <span class="lf-text">Mas punya Porsche!</span>
+            </label>
+          </li>
+          <li class="lf-item" style="--item-i:4">
+            <label class="lf-label">
+              <input type="checkbox" />
+              <span class="lf-box"></span>
+              <span class="lf-text">Tinggal satu atap bersama Keina</span>
+            </label>
+          </li>
+          <li class="lf-item" style="--item-i:5">
+            <label class="lf-label">
+              <input type="checkbox" />
+              <span class="lf-box"></span>
+              <span class="lf-text">ngerayain anniversary ke-5, ke-10, dan seterusnya</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Kanan: Stack foto -->
+      <div class="lf-right">
+        <div class="lf-stack" id="lfStack">
+          <div class="lf-frame lff1" ><img src="Assets/Frame 5.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff2" ><img src="Assets/Frame 9.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff3" ><img src="Assets/Frame 6.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff4" ><img src="Assets/Frame 12.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff5" ><img src="Assets/Frame 1.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff6" ><img src="Assets/Frame 10.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff7" ><img src="Assets/Frame 7.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff8" ><img src="Assets/Frame 8.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff9" ><img src="Assets/Frame 4.png"  alt="" loading="lazy" /></div>
+          <div class="lf-frame lff10"><img src="Assets/Frame 2.png" alt="" loading="lazy" /></div>
+          <div class="lf-frame lff11"><img src="Assets/Frame 11.png" alt="" loading="lazy" /></div>
+          <div class="lf-frame lff12"><img src="Assets/Frame 3.png" alt="" loading="lazy" /></div>
+          <img src="Assets/hoverMe.png" class="lf-hover-hint" alt="Hover me!" />
+          <img src="Assets/click.png" class="lf-click-hint" alt="Click!" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+          onload="emailjs.init('FCkzQtu5BV_-O3cLW')"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/bento-anim.js"></script>
+  <script>
+    document.querySelectorAll('.lf-checklist .lf-label input[type="checkbox"]').forEach((cb) => {
+      cb.addEventListener('change', () => {
+        cb.closest('.lf-item').classList.toggle('lf-done', cb.checked);
+      });
+    });
+
+    ['#aqStack', '#lfStack'].forEach((sel) => {
+      const stack = document.querySelector(sel);
+      if (!stack) return;
+
+      // Klik di stack → expand (tambah .tapped)
+      stack.addEventListener('click', (e) => {
+        e.stopPropagation();
+        stack.classList.add('tapped');
+      });
+    });
+
+    // Klik di luar stack yang sedang tapped → collapse
+    document.addEventListener('click', () => {
+      document.querySelectorAll('#aqStack, #lfStack').forEach(stack => {
+        stack.classList.remove('tapped');
+      });
+    });
+  </script>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <img src="Assets/Love.png" alt="" class="footer-love-bg" />
+    <div class="footer-content">
+      <h2 class="footer-headline">Happy 2nd Anniversary, my love.</h2>
+      <p class="footer-tagline">
+        <span class="footer-copy-icon">©</span>
+        Copyright 2026&nbsp; Jennatul Macwe - All Right reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

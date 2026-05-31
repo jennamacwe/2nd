@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anniversary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+
+      <!-- Left: Photo -->
+      <div class="card-photo">
+        <img src="Assets/photo-login.png" alt="Us" />
+        <div class="photo-overlay">
+          <p class="photo-caption">type the day our story began.</p>
+          <p class="photo-quote">But before you enter, tell me… do you still remember the date that changed my whole world?</p>
+        </div>
+      </div>
+
+      <!-- Right: PIN entry -->
+      <div class="card-pin">
+        <h2 class="pin-title">Enter <span>[Our]</span> Password</h2>
+
+        <!-- PIN dots -->
+        <div class="pin-dots" id="pinDots">
+          <div class="dot" id="dot-0"></div>
+          <div class="dot" id="dot-1"></div>
+          <div class="dot" id="dot-2"></div>
+          <div class="dot" id="dot-3"></div>
+        </div>
+
+        <!-- Error message -->
+        <p class="error-msg" id="errorMsg"></p>
+
+        <!-- Numpad -->
+        <div class="numpad">
+          <button class="num-btn" onclick="pressKey('1')">1</button>
+          <button class="num-btn" onclick="pressKey('2')">2</button>
+          <button class="num-btn" onclick="pressKey('3')">3</button>
+          <button class="num-btn" onclick="pressKey('4')">4</button>
+          <button class="num-btn" onclick="pressKey('5')">5</button>
+          <button class="num-btn" onclick="pressKey('6')">6</button>
+          <button class="num-btn" onclick="pressKey('7')">7</button>
+          <button class="num-btn" onclick="pressKey('8')">8</button>
+          <button class="num-btn" onclick="pressKey('9')">9</button>
+          <div></div>
+          <button class="num-btn" onclick="pressKey('0')">0</button>
+          <button class="num-btn del-btn" onclick="deleteLast()">&#9003;</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
