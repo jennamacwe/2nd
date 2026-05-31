@@ -78,7 +78,7 @@ body {
 
 .hero-headline {
   font-family: 'Petrona', Georgia, serif;
-  font-size: clamp(2rem, 5.5vw, 4rem);
+  font-size: clamp(2rem, 4vw, 3rem); 
   font-weight: 500;
   color: #1a1a2e;
   line-height: 1.2;
