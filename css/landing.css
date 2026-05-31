@@ -899,7 +899,7 @@ body {
 
 @media (hover: none) {
   .aq-hover-hint { display: none; }
-  .aq-click-hint { display: block; }
+  .aq-click-hint { display: block; right: -120px;}
   .aq-stack.tapped .aq-click-hint { opacity: 0; }
 
   .aq-left:has(.aq-stack.tapped) {
