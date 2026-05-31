@@ -104,6 +104,16 @@ body {
   min-height: 1.6em;
 }
 
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-break {
+    display: block;
+  }
+}
+
 /* ── Word fade-in on scroll ── */
 .word-scroll {
   display: inline-block;
