@@ -105,12 +105,12 @@ body {
 }
 
 .mobile-break {
-  display: none;
+  display: block;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 601px) {
   .mobile-break {
-    display: block;
+    display: none; 
   }
 }
 
